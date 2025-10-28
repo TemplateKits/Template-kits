@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Plantillas Envato</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Plantillas Premium Elementor | Kits Profesionales para WordPress</title>
+  <meta name="description" content="Explora nuestra colección exclusiva de plantillas premium para Elementor. Más de 1000 kits profesionales para crear sitios web modernos y funcionales.">
+  <meta name="keywords" content="plantillas elementor, kits wordpress, diseño web, plantillas premium, elementor pro, diseño profesional">
+  <meta name="author" content="Plantillas Premium">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Plantillas Premium Elementor | Kits Profesionales">
+  <meta property="og:description" content="Descubre plantillas premium para Elementor. Diseños profesionales y modernos para tu sitio web.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tusitio.com">
+  <meta property="og:image" content="https://tusitio.com/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plantillas Premium Elementor">
+  <meta name="twitter:description" content="Colección exclusiva de plantillas profesionales para WordPress">
+  <meta name="twitter:image" content="https://tusitio.com/twitter-image.jpg">
+
+  <link rel="canonical" href="https://tusitio.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Plantillas Premium Elementor",
+    "description": "Colección de plantillas profesionales para Elementor y WordPress",
+    "url": "https://tusitio.com",
+    "inLanguage": "es"
+  }
+  </script>
 </head>
 <body>
-  <div id="paginacion"></div>
-  <h1>Plantillas Premium</h1>
-  <input type="text" id="buscador" placeholder="Buscar por título, autor o ID..." />
-  <div id="contador"></div>
-  <div class="grid" id="contenedor"></div>
+  <header class="header">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Navegación principal">
+        <div class="logo">
+          <h1>Plantillas Premium</h1>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" role="main">
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Descubre Plantillas Premium para Elementor</h2>
+        <p class="hero-subtitle">Más de 1000 kits profesionales para WordPress. Encuentra la plantilla perfecta para tu proyecto.</p>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="container">
+        <div class="search-wrapper">
+          <label for="buscador" class="sr-only">Buscar plantillas</label>
+          <input
+            type="search"
+            id="buscador"
+            placeholder="Buscar por título, autor o ID..."
+            aria-label="Buscar plantillas"
+            autocomplete="off"
+          >
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </div>
+        <div id="contador" class="counter" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <nav class="pagination-wrapper" aria-label="Paginación">
+      <div id="paginacion" class="pagination"></div>
+    </nav>
+
+    <section class="templates-section">
+      <div class="container">
+        <div class="grid" id="contenedor" role="list"></div>
+      </div>
+    </section>
+
+    <nav class="pagination-wrapper pagination-bottom" aria-label="Paginación inferior">
+      <div id="paginacion-bottom" class="pagination"></div>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Plantillas Premium. Todos los derechos reservados.</p>
+      <p class="footer-links">
+        <a href="#" rel="noopener">Términos de Uso</a>
+        <span>•</span>
+        <a href="#" rel="noopener">Privacidad</a>
+        <span>•</span>
+        <a href="#" rel="noopener">Contacto</a>
+      </p>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
